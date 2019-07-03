@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "description": "Helper class that wraps an async function to be called later and returns a promise that resolves with the result of that former function when the said function is called",
   "main": "dist/tattler.js",
+  "types": "dist/tattler.d.ts",
   "scripts": {
-    "dev": "parcel tattler.ts",
+    "dev": "concurrently \"parcel watch tattler.ts\" \"tsc -p ./tsconfig.declaration.json\"",
     "test": "jest --watch",
     "lint": "eslint --ext .ts,.js ."
   },
@@ -40,6 +41,7 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^1.11.0",
     "@typescript-eslint/parser": "^1.11.0",
+    "concurrently": "^4.1.1",
     "eslint": "^6.0.1",
     "eslint-config-standard-with-typescript": "^7.1.0",
     "eslint-plugin-import": "^2.18.0",

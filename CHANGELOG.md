@@ -12,6 +12,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - eslint and tsconfig.json
 - parcel packaging
 - tattler class
+- Declaration files for TypeScript
+
+### Changed
+
+- parcel now does not start up a server
+- dev script to also create declaration files on save
+
 
 ## [0.1.0] - 2019-07-02
 

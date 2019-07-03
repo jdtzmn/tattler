@@ -2,7 +2,10 @@
   "compilerOptions": {
     "strict": true,
     "esModuleInterop": true,
-    "target": "es2017",
-    "alwaysStrict": true
-  }
+    "target": "es6",
+    "alwaysStrict": true,
+  },
+  "include": [
+    "tattler.ts"
+  ]
 }
