@@ -4,7 +4,20 @@
   "description": "Helper class that wraps an async function to be called later and returns a promise that resolves with the result of that former function when the said function is called",
   "main": "dist/tattler.js",
   "scripts": {
-    "test": "jest --watch"
+    "dev": "parcel tattler.ts",
+    "test": "jest --watch",
+    "lint": "eslint --ext .ts,.js ."
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
@@ -23,5 +36,20 @@
   "bugs": {
     "url": "https://github.com/jdtzmn/tattler/issues"
   },
-  "homepage": "https://github.com/jdtzmn/tattler#readme"
+  "homepage": "https://github.com/jdtzmn/tattler#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.11.0",
+    "@typescript-eslint/parser": "^1.11.0",
+    "eslint": "^6.0.1",
+    "eslint-config-standard-with-typescript": "^7.1.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jest": "^22.7.1",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "husky": "^3.0.0",
+    "lint-staged": "^9.0.1",
+    "parcel-bundler": "^1.12.3",
+    "typescript": "^3.5.2"
+  }
 }
