@@ -1,0 +1,27 @@
+{
+  "name": "tattler",
+  "version": "0.1.0",
+  "description": "Helper class that wraps an async function to be called later and returns a promise that resolves with the result of that former function when the said function is called",
+  "main": "dist/tattler.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdtzmn/tattler.git"
+  },
+  "keywords": [
+    "async",
+    "resolver",
+    "wrapper",
+    "informer",
+    "tattler",
+    "tattle"
+  ],
+  "author": "jdtzmn <jdtzmn@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jdtzmn/tattler/issues"
+  },
+  "homepage": "https://github.com/jdtzmn/tattler#readme"
+}
