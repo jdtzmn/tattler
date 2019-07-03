@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - parcel packaging
 - tattler class
 - Declaration files for TypeScript
+- dist as a directory to be downloaded when installing the package
 
 ### Changed
 

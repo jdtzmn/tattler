@@ -2,8 +2,8 @@
   "name": "tattler",
   "version": "0.1.0",
   "description": "Helper class that wraps an async function to be called later and returns a promise that resolves with the result of that former function when the said function is called",
-  "main": "dist/tattler.js",
-  "types": "dist/tattler.d.ts",
+  "main": "./dist/tattler.js",
+  "types": "./dist/tattler.d.ts",
   "scripts": {
     "dev": "concurrently \"parcel watch tattler.ts\" \"tsc -p ./tsconfig.declaration.json\"",
     "test": "jest --watch",
@@ -20,6 +20,9 @@
       "git add"
     ]
   },
+  "files": [
+    "./dist/**/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jdtzmn/tattler.git"
