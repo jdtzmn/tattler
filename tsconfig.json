@@ -2,8 +2,12 @@
   "compilerOptions": {
     "strict": true,
     "esModuleInterop": true,
-    "target": "es6",
+    "module": "umd",
+    "target": "es5",
     "alwaysStrict": true,
+    "declaration": true,
+    "outDir": "./dist/",
+    "sourceMap": true
   },
   "include": [
     "tattler.ts"
