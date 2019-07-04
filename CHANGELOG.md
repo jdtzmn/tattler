@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- README
+
 ## [0.2.0] - 2019-07-03
 
 ### Added
@@ -21,7 +25,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - parcel now does not start up a server
 - dev script to also create declaration files on save
-
 
 ## [0.1.0] - 2019-07-02
 
